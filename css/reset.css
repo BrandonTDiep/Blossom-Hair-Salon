@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/ /** use 62.5% for accessbility default font is 16 * 62.5 wind up with 10px so font size is basically 10px but % for accessbility */
+html{ 
+	font-size: 62.5%;      
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+
+p, a, img, span, input, textarea, button {
+	font-size: 1.3rem;
+}
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+nav{
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 30px;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+
+nav img {
+ vertical-align: middle;
+ width: 18px;
+}
+
+a:hover{
+	color: orange;
+}
+
+.hamburger{
+	display: none;
+	cursor: pointer;
+}
+
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: black;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media(max-width: 1100px){
+	.hamburger{
+		 display: block;
+	}
+
+	.hamburger.active .bar:nth-child(2){
+		 opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1){
+		 transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3){
+		 transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.navbar{
+		 justify-content: space-between;
+	}
+
+	.nav-menu{
+		 display: flex;
+		 position: fixed;
+		 left: -100%;
+		 top: 70px;
+		 gap: 0;
+		 flex-direction: column;
+		 background-color: violet;
+		 width: 100%;
+		 text-align: center;
+		 transition: 0.3s;
+	}
+
+	.nav-item{
+		 margin: 16px 0;
+	}
+
+	.nav-menu.active{
+		 left: 0;
+	}
+}

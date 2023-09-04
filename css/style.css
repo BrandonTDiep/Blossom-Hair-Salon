@@ -1,0 +1,636 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/ /** use 62.5% for accessbility default font is 16 * 62.5 wind up with 10px so font size is basically 10px but % for accessbility */
+html{ 
+     font-size: 62.5%;      
+     font-family: sans-serif;
+     scroll-behavior: smooth;
+}
+
+p, a, img, span, input, textarea, button {
+     font-size: 1.3rem;
+}
+
+h1{
+     margin: 0;
+     padding: 0;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/* ========= HEADER ========= */
+
+.company{
+     font-family: 'Dancing Script', cursive;
+     font-weight: 700;
+     font-size: 2.7rem;
+}
+
+
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0px 130px;
+ }
+ 
+.left-section{
+     flex: 1;
+}
+ 
+.center-section{
+     flex: 2;
+     text-align: center;
+}
+ 
+.right-section{
+     flex: 1;
+     text-align: right;
+}
+
+.nav-menu{
+     padding: 0;
+} 
+
+
+.nav-item{
+     display: inline-block;
+     list-style: none;
+     margin: 0 20px;
+}
+
+nav a{
+     color: black;
+     text-decoration: none;
+}
+
+.right-section li{
+     list-style: none;
+}
+
+nav img {
+  vertical-align: middle;
+  width: 18px;
+}
+
+a:hover{
+     color: orange;
+}
+
+.hamburger{
+     display: none;
+     cursor: pointer;
+}
+
+.bar{
+     display: block;
+     width: 25px;
+     margin: 5px 30px;
+     height: 3px;
+     -webkit-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+     background-color: black;
+}
+
+/* ========= MAIN ========= */
+main{
+     background-image: url(../images/blondegirl.jpg);
+     background-position: 50% 15%;
+     background-size: cover;
+     padding: 250px 0 30px 10%;
+     height: 1000px;
+}
+
+button{
+     display: inline-block;
+     background-color:black;
+     color: #fff;
+     border:none;
+     padding: 15px 30px;
+}
+
+.mainOffer h1{
+     font-size: 10rem;
+     font-weight: 300;
+}
+
+.mainOffer p{
+     margin: 20px 0 40px 0;
+     color: black;
+     letter-spacing: 3px;
+     font-size: 1.5rem;
+
+}
+
+.mainVisit{
+     background: black;
+     width: max-content;
+     margin-top: 80px;
+     padding: 40px 30px 40px 0;
+}
+
+.workdays{
+     right: 0;
+     position: absolute;
+     transform: translateX(35%) rotate(90deg);
+     letter-spacing: 2px;
+}
+
+
+.mainVisit p{
+     margin-bottom: 40px;
+     margin-top: 0;
+     color: white;
+     padding-left: 30px;
+     font-size: 1.5rem;
+     line-height: 1.5;
+}
+
+.mainVisit p span{
+     font-weight: 700;
+     font-size: 3rem;
+}
+
+.mainVisit button{
+     display: inline-block;
+     background-color:white;
+     color: black;
+     border:none;
+     margin: 0px 30px;
+}
+
+.visit{
+     display: inline-block;
+     color: white;
+     padding: 20px 0 20px 30px;
+     border-left: 4px solid white;
+}
+
+/* ========= SERVICES ========= */
+
+.services{
+     padding: 150px 0;
+     display: flex;
+     margin: 0 180px;
+}
+
+.services section{
+     text-align: center;
+     margin: 0 45px;
+     flex: 1;
+}
+
+.services section p{
+     font-size: 1.6rem;
+     line-height: 2;
+}
+
+.services section h3{
+     font-size: 2.2rem;
+}
+
+
+/* ========= MOMENTUM ========= */
+.momentum{
+     background: #EDF1F3;
+     padding: 150px 160px;
+     display: flex;
+}
+
+video{
+     object-fit: contain;
+     overflow-clip-margin: content-box;
+     overflow: clip;
+}
+
+.momentum h2{
+     font-size: 3.8rem;
+     line-height: 1.5;
+     letter-spacing: 1px;
+}
+
+
+.momentum p{
+     font-size: 1.6rem;
+     line-height: 2;
+     padding-right: 80px;
+     padding-bottom: 10px;
+
+}
+
+
+/* ========= HAIRSTYLISTS ========= */
+
+.stylists{
+     padding: 150px 0;
+     text-align: center;
+}
+
+.stylists figure{
+     display: inline-block; 
+}
+
+figcaption{
+     margin: 0 auto;
+     text-align: center;
+     color: white;
+     background: black;
+     width: 350px;
+     padding: 30px 60px;
+     transform: translateY(-50%);
+     letter-spacing: 2px;
+}
+
+figure{
+     margin: 0 15px;
+}
+
+figcaption h4{
+     font-size: 2rem;
+     font-weight: 300;
+     margin: 0;
+}
+
+figcaption span{
+     display: inline-block;
+     font-size: 1.4rem;
+     margin-top: 10px;
+}
+
+/* ========= PROMO ========= */
+.promo{
+     background-image: url(/images/promo1.jpg);
+     background-size: cover;
+     padding: 150px 0 30px 10%;
+     background-position: 0% 15%;
+     height: 600px;
+}
+
+.promo h4{
+     font-size: 2rem;
+     font-weight: normal;
+     margin: 12px 0;
+}
+
+.promo p{
+     margin: 0 0 40px 0;
+     color: black;
+     font-size: 3.5rem;
+     font-weight: 100;
+     line-height: 1.4;
+}
+
+.promo p span {
+     font-weight: 700;
+     font-size: 5rem;
+     letter-spacing: normal;
+}
+
+.promo button{
+     padding: 20px 40px;
+     letter-spacing: 0.2rem;
+     font-size: 1.4rem;
+}
+ 
+ 
+
+/* ========= LOOKBOOK ========= */
+
+.lookbook{
+     padding: 150px 0;
+     text-align: center;
+}
+
+.lookbook h2{
+     margin: 0;
+     font-size: 6rem;
+     font-weight: lighter;
+}
+
+.lookbook div{
+     margin: 20px auto;
+     width: 35px;
+     height: 4px;
+     display: block;
+     border-radius: 50px;
+     background: black;
+}
+
+.lookbook section section{
+     display: inline-block;
+     width: 500px;
+     margin: 0 10px;
+}
+
+.lookbook section section img.top-row{
+     margin-bottom: 20px;
+}
+
+/* ========= FOOTER ========= */
+footer{
+     background: black;
+     color: white;
+     text-align: center;
+     padding: 30px 0;
+}
+
+footer p{
+     font-size: 1.6rem;
+     margin: 0;
+}
+footer p span{
+     font-size: 1.6rem;
+}
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+/* ========= Header ========= */
+@media(max-width: 1400px){
+     .hamburger{
+          display: block;
+     }
+
+     .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+     }
+
+     .hamburger.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+     }
+
+     .hamburger.active .bar:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+     }
+
+     .navbar{
+          justify-content: space-between;
+     }
+
+     .nav-menu{
+          display: flex;
+          position: absolute;
+          left: -100%;
+          top: 70px;
+          flex-direction: column;
+          background-color: lightblue; 
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+          margin: 0 auto;
+     }
+
+     .nav-item{
+          margin: 16px 0;
+     }
+
+     .nav-menu.active{
+          left: 0;
+     }
+
+     .left-section{
+          flex: 2;
+     }
+
+     .right-section{
+          flex: 1;
+     }
+
+     .navbar{
+          margin: 0px 50px;
+      }
+}
+
+@media (min-width: 1400px) and (max-width: 1750px) {
+     .nav-item {
+         margin: 0 10px;
+     }
+}
+
+@media (max-width: 600px){
+     .navbar{
+          margin: 0;
+          justify-content: normal;
+          
+     }
+
+     div.left-section{
+          flex: 8;
+     }
+
+     .nav-menu{
+          top: 62px;
+     }
+
+     .left-section h2{
+          margin-left: 30px;
+          font-size: 2.2rem;
+          
+     }
+
+     .bookonline a{
+          font-size: 1rem;
+      }
+}
+
+
+/* ========= Main ========= */
+
+@media(max-width: 780px){
+     main{
+          background-position: 62% 5%;
+          height: 900px;
+     }
+
+     .mainOffer h1{
+          font-size: 4.8rem;
+          
+     }
+
+     .mainOffer p{
+          font-size: 1.3rem;
+     }
+     
+     .mainVisit{
+          margin-top: 80px;
+          padding: 40px 30px 40px 0;
+     }
+     
+     .workdays{
+          margin-top: 400px;
+          transform: translateX(43%) rotate(90deg);
+     }
+}
+
+
+/* ========= Services ========= */
+
+@media(max-width: 1370px){
+     .services{
+          flex-direction: column;
+     }
+
+     .services section.middle{
+          padding: 50px 0;
+     }  
+}
+
+@media(max-width: 780px){
+     .services{
+          margin: 0;
+     }
+}
+/* ========= Momentum ========= */
+
+@media(max-width: 1650px){
+     .momentum video {
+          width: 100%; /* Make the video full width on smaller screens */
+          height: auto; /* Maintain the aspect ratio */
+      }
+
+     .momentum{
+          display: flex;
+          flex-direction: column;
+          text-align: center;   
+     }
+
+     .momentum p{
+          padding: 0;        
+     }
+
+     .momentum .left button{
+          margin: 10px 0 33px 0;
+     }
+}
+
+@media(max-width: 690px){
+     .momentum{
+          padding-right: 20px;
+          padding-left: 20px;       
+     }
+}
+
+/* ========= Stylists ========= */
+
+@media(max-width: 480px){
+     .stylists figure img{
+          width: 100%;
+     }
+
+     figcaption{
+          width: 310px;
+     }
+}
+
+/* ========= Promos ========= */
+
+
+@media(max-width: 1390px){
+     .promo{
+          background-position: 5% 15%;
+          background-size: 120%;
+          padding-top: 165px;
+     }
+
+}
+
+@media(max-width: 1285px){
+     .promo{
+          background-position: 5% 15%;
+          background-size: 130%;
+          padding-top: 165px;
+     }
+     .promo p span{
+          font-size: 4rem;
+     }
+
+
+     .promo p{
+          font-size: 2.5rem;
+     }
+
+}
+
+
+@media(max-width: 1000px){
+     .promo{
+          background-position: 25% 15%;
+          background-size: 150%;
+          padding-top: 165px;
+     }
+
+     .promo p span{
+          font-size: 4rem;
+     }
+
+     .promo p{
+          font-size: 2.5rem;
+     }
+
+}
+
+
+@media(max-width: 480px){
+     .promo{
+          background-position: 5% 15%;
+     }
+}
+
+
+/* ========= Lookbook ========= */
+
+@media(max-width: 1042px){
+     .lookbook > section section:nth-child(2){
+          margin-top: 20px;
+     }
+}
+
+
+@media(max-width: 1565px){
+     .lookbook > section section:last-child{
+          margin-top: 20px;
+     }
+}
+
+
+@media(max-width: 550px){
+     .lookbook section section{
+          width: 90%;
+     }
+
+     .lookbook img{
+          width: 100%;
+     }
+}
+
+@media(max-width: 520px){
+     .lookbook h2{
+          font-size: 4rem;
+     }
+}
