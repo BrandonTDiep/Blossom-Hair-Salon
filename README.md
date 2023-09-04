@@ -1,5 +1,5 @@
 # Blossom Hair Salon
-An attractive and user-friendly website design overhaul of a local hair salon business
+An attractive, mobile responsive, and user-friendly website design overhaul of a local hair salon business
 
 **Link to project:** https://blossomhairsalon.netlify.app/
 
