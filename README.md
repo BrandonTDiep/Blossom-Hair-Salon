@@ -10,7 +10,7 @@ An attractive and user-friendly website design overhaul of a local hair salon bu
 
 **Tech used:** HTML, CSS, JavaScript
 
-THe website used HTML to structure the page and its content. The page was designed with CSS and utilized media queries to adjust for different screen sizes. JavaScript was used for when the page becomes too small then a hamburger menu is displayed in the header.
+The website used HTML to structure the page and its content. The page was designed with CSS and utilized media queries to adjust for different screen sizes. JavaScript was used for when the page becomes too small then a hamburger menu is displayed in the header.
 
 
 ## Lessons Learned:
