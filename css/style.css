@@ -434,7 +434,7 @@ footer p span{
 }
 
 
-@media (max-width: 678px){
+@media (max-width: 800px){
      .navbar{
           margin: 0;
           justify-content: normal;
