@@ -22,8 +22,14 @@
 /*******************************************/ /** use 62.5% for accessbility default font is 16 * 62.5 wind up with 10px so font size is basically 10px but % for accessbility */
 html{ 
      font-size: 62.5%;      
-     font-family: sans-serif;
+     font-family: "Cinzel", "Playfair Display", "DM Serif Display", "Times New Roman", serif;
      scroll-behavior: smooth;
+}
+
+body{
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
 }
 
 p, a, img, span, input, textarea, button {
@@ -33,6 +39,11 @@ p, a, img, span, input, textarea, button {
 h1{
      margin: 0;
      padding: 0;
+}
+
+p{
+     font-family: sans-serif;
+
 }
 
 
@@ -97,8 +108,13 @@ nav img {
   width: 18px;
 }
 
-a:hover{
+li a:hover{
      color: orange;
+}
+
+li a{
+     font-size: 1.4rem;
+     font-weight: bold;
 }
 
 .hamburger{
@@ -118,9 +134,9 @@ a:hover{
 
 /* ========= MAIN ========= */
 main{
-     background-image: url(../images/blondegirl.jpg);
-     background-position: 50% 15%;
-     background-size: cover;
+     background-image: url(/images/promo.jpg);
+     background-position: 0% 15%;
+     background-size: 110%;
      padding: 250px 0 30px 10%;
      height: 1000px;
 }
@@ -131,6 +147,8 @@ button{
      color: #fff;
      border:none;
      padding: 15px 30px;
+     font-weight: bold;
+
 }
 
 .mainOffer h1{
@@ -143,7 +161,7 @@ button{
      color: black;
      letter-spacing: 3px;
      font-size: 1.5rem;
-
+     font-weight: bold;
 }
 
 .mainVisit{
@@ -158,6 +176,7 @@ button{
      position: absolute;
      transform: translateX(35%) rotate(90deg);
      letter-spacing: 2px;
+     font-weight: bold;
 }
 
 
@@ -168,7 +187,13 @@ button{
      padding-left: 30px;
      font-size: 1.5rem;
      line-height: 1.5;
+     
 }
+
+.mainVisit span{
+     font-size: 1.4rem;
+}
+
 
 .mainVisit p span{
      font-weight: 700;
@@ -181,6 +206,7 @@ button{
      color: black;
      border:none;
      margin: 0px 30px;
+     font-weight: bold;
 }
 
 .visit{
@@ -216,15 +242,9 @@ button{
 
 /* ========= MOMENTUM ========= */
 .momentum{
-     background: #EDF1F3;
+     background: #F2F0F1;
      padding: 150px 160px;
      display: flex;
-}
-
-video{
-     object-fit: contain;
-     overflow-clip-margin: content-box;
-     overflow: clip;
 }
 
 .momentum h2{
@@ -283,10 +303,11 @@ figcaption span{
 
 /* ========= PROMO ========= */
 .promo{
-     background-image: url(/images/promo1.jpg);
+     background-image: url(/images/equipment.jpg);
      background-size: cover;
      padding: 150px 0 30px 10%;
      background-position: 0% 15%;
+     background-repeat: no-repeat;
      height: 600px;
 }
 
@@ -302,11 +323,12 @@ figcaption span{
      font-size: 3.5rem;
      font-weight: 100;
      line-height: 1.4;
+     font-family: "Cinzel", "Playfair Display", "DM Serif Display", "Times New Roman", serif;
 }
 
 .promo p span {
-     font-weight: 700;
-     font-size: 5rem;
+     font-weight: 900;
+     font-size: 5.5rem;
      letter-spacing: normal;
 }
 
@@ -314,6 +336,8 @@ figcaption span{
      padding: 20px 40px;
      letter-spacing: 0.2rem;
      font-size: 1.4rem;
+     font-weight: bold;
+
 }
  
  
@@ -356,6 +380,7 @@ footer{
      color: white;
      text-align: center;
      padding: 30px 0;
+     margin-top: auto;
 }
 
 footer p{
@@ -367,6 +392,41 @@ footer p span{
 }
 
 
+/* ========= Appontment ========= */
+
+section.bookApt h2{
+     margin-left: 0.5%;
+     font-size: 3rem;
+}
+
+section.bookApt{
+     margin: auto;
+}
+
+form{
+     font-family: sans-serif;
+     width: 100%;
+}
+
+form input, form textArea{
+     padding: 10px;
+}
+
+form input[type = "text"], form input[type = "email"]{
+     width: 49%;
+     margin: 0.5%;
+}
+
+
+form textArea{
+     width: 99%;
+     margin: 0.5%;
+}
+
+form button{
+     margin: 0.5%;
+     font-family: "Cinzel", "Playfair Display", "DM Serif Display", "Times New Roman", serif;
+}
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
@@ -399,7 +459,7 @@ footer p span{
           left: -100%;
           top: 76px;
           flex-direction: column;
-          background-color: lightblue; 
+          background-color: white; 
           width: 100%;
           text-align: center;
           transition: 0.3s;
@@ -458,11 +518,10 @@ footer p span{
      .navbar{
           margin: 0;
           justify-content: normal;
-
      }
 
      div.left-section{
-          flex: 8;
+          flex: 15;
      }
 
      .nav-menu{
@@ -483,26 +542,42 @@ footer p span{
 
 @media (max-width: 414px){
      .nav-menu{
-          top: 87px;
+          top: 61px;
      }
 }
 
 
 /* ========= Main ========= */
 
-@media(max-width: 780px){
+@media(max-width: 1650px){
+     .mainOffer h1{
+          font-size: 8rem;
+     }
+}
+
+@media(max-width: 1312px){
+     .mainOffer h1{
+          font-size: 6rem;
+     }
+}
+
+
+
+@media(max-width: 900px){
      main{
-          background-position: 62% 5%;
+          background-position: 10% 5%;
+          background-size: 163%;
           height: 900px;
+          background-repeat: no-repeat;
      }
 
      .mainOffer h1{
-          font-size: 4.8rem;
-          
+          font-size: 4.8rem; 
      }
 
      .mainOffer p{
           font-size: 1.3rem;
+          width: 90%;
      }
      
      .mainVisit{
@@ -582,16 +657,13 @@ footer p span{
 @media(max-width: 1390px){
      .promo{
           background-position: 5% 15%;
-          background-size: 120%;
           padding-top: 165px;
      }
 
 }
 
-@media(max-width: 1285px){
+@media(max-width: 1378px){
      .promo{
-          background-position: 5% 15%;
-          background-size: 130%;
           padding-top: 165px;
      }
      .promo p span{
@@ -606,10 +678,10 @@ footer p span{
 }
 
 
-@media(max-width: 1000px){
+@media(max-width: 450px){
      .promo{
           background-position: 25% 15%;
-          background-size: 150%;
+          background-size: 239%;
           padding-top: 165px;
      }
 
