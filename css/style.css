@@ -43,7 +43,10 @@ h1{
 
 p{
      font-family: sans-serif;
+}
 
+button:hover{
+     color:orange
 }
 
 
@@ -207,6 +210,10 @@ button{
      border:none;
      margin: 0px 30px;
      font-weight: bold;
+}
+
+.mainVisit button:hover{
+     color: orange;
 }
 
 .visit{
