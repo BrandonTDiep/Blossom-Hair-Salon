@@ -3,7 +3,7 @@ An attractive, mobile responsive, and user-friendly website design overhaul of a
 
 **Link to project:** https://blossomhairsalon.netlify.app/
 
-![image](https://github.com/BrandonTDiep/Blossom-Hair-Salon/assets/108596840/162c826a-d491-4bc1-9ab1-36b3e996bba5)
+![image](https://github.com/BrandonTDiep/Blossom-Hair-Salon/assets/108596840/0add613d-afef-472c-88f8-ddcf01e8eab8)
 
 
 ## How It's Made:
